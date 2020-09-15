@@ -12,7 +12,7 @@ pip install git+https://github.com/huggingface/transformers.git@7b75aa9fa55bee57
 ## Dataset
 You can download our dataset at [here](https://drive.google.com/drive/folders/1QEZzKEv0G52WE_z8_7f4QpIq1mcs7ea1) and put them into the `LiveBot` folder.
 
-This dataset is based on [Livebot](https://arxiv.org/abs/1809.04938) and the raw data can be found at [Livebot](https://github.com/lancopku/livebot).
+This dataset is based on [Livebot](https://arxiv.org/abs/1809.04938) and the raw data can be found at [livebot](https://github.com/lancopku/livebot).
 
 ## Config
 All the parameters can be set at: `LiveBot\MyPLVCG\config`.

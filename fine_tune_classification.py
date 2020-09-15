@@ -29,7 +29,7 @@ parser.add_argument('-eval_corpus_file', type=str, default='dev-context.json', h
 parser.add_argument('-vocab_file', type=str, default='dicts-30000_tokenizer.json', help="vocabulary json file")
 parser.add_argument('-merges_file', type=str, default='merges.txt', help="merges file")
 parser.add_argument('-preprocess_dir', type=str, default='preprocessed_data', help="path of preprocessed files")
-parser.add_argument('-pretrain_file', type=str, default=os.path.join('ckpt_ft','model_steps_76500.pt'), help="pretrain model file")
+parser.add_argument('-pretrain_file', type=str, default=os.path.join('ckpt_ft','best-model.pt'), help="pretrain model file")
 parser.add_argument('-video_type_map_file', type=str, default='video_type.json', help="video type json file")
 parser.add_argument('-model_file', type=str, default=None, help="Restoring model file")
 parser.add_argument('-save_dir', type=str, default='ckpt_cf', help="checkpoint folder")
@@ -50,9 +50,9 @@ class ClassificationConfig(NamedTuple):
     n_epochs: int = 1 # the number of epoch
     warmup: float = 0.01
     warmup_steps: int = 0
-    save_steps: int = 20 # interval for saving model
-    print_steps: int = 1
-    eval_steps: int = 10
+    save_steps: int = 200 # interval for saving model
+    print_steps: int = 100
+    eval_steps: int = 1000
     weight_decay: float = 0.0
     adam_epsilon: float = 1e-8
     gradient_accumulation_steps: int = 1

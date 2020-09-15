@@ -48,9 +48,9 @@ class FineTuningConfig(NamedTuple):
     predict_batch_size: int = 8
     lr: int = 1e-5 # learning rate
     n_epochs: int = 9 # the number of epoch
-    save_steps: int = 20 # interval for saving model
-    print_steps: int = 1
-    eval_steps: int = 10
+    save_steps: int = 2000 # interval for saving model
+    print_steps: int = 100
+    eval_steps: int = 1000
     total_steps: int = 0 # total number of steps to train
     weight_decay: float = 0.0
     adam_epsilon: float = 1e-8

@@ -43,7 +43,7 @@ python test_generate.py
 
 ## Citation
 If this is helpful for your work, please cite our paper as:
-
+```
 @inproceedings{DBLP:conf/pakdd/ZengGXT21,
   author    = {Zehua Zeng and
                Neng Gao and
@@ -55,3 +55,4 @@ If this is helpful for your work, please cite our paper as:
                Part {II}},
   year      = {2021}
 }
+```

@@ -41,3 +41,17 @@ Generate comments:
 python test_generate.py 
 ```
 
+## Citation
+If this is helpful for your work, please cite our paper as:
+
+@inproceedings{DBLP:conf/pakdd/ZengGXT21,
+  author    = {Zehua Zeng and
+               Neng Gao and
+               Cong Xue and
+               Chenyang Tu},
+  title     = {{PLVCG:} {A} Pretraining Based Model for Live Video Comment Generation},
+  booktitle = {Advances in Knowledge Discovery and Data Mining - 25th Pacific-Asia
+               Conference, {PAKDD} 2021, Virtual Event, May 11-14, 2021, Proceedings,
+               Part {II}},
+  year      = {2021}
+}
